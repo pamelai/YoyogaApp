@@ -1,0 +1,945 @@
+/*------------- GENERAL -------------*/
+@font-face {
+    font-family: 'm';
+    src: url('../tipos/montserrat-regular-webfont.eot');
+    src: url('../tipos/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../tipos/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../tipos/montserrat-regular-webfont.woff') format('woff'),
+         url('../tipos/montserrat-regular-webfont.ttf') format('truetype'),
+         url('../tipos/montserrat-regular-webfont.svg#m') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ms';
+    src: url('../tipos/montserrat-semibold-webfont.eot');
+    src: url('../tipos/montserrat-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../tipos/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('../tipos/montserrat-semibold-webfont.woff') format('woff'),
+         url('../tipos/montserrat-semibold-webfont.ttf') format('truetype'),
+         url('../tipos/montserrat-semibold-webfont.svg#ms') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'mb';
+    src: url('../tipos/montserrat-bold-webfont.eot');
+    src: url('../tipos/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../tipos/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../tipos/montserrat-bold-webfont.woff') format('woff'),
+         url('../tipos/montserrat-bold-webfont.ttf') format('truetype'),
+         url('../tipos/montserrat-bold-webfont.svg#mb') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.25em;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'm', 'arial';
+    color: #333333;
+    font-weight: normal;
+}
+
+*:focus{
+    outline: none;
+}
+
+
+a{
+    display: block;
+}
+
+img{
+    width: 100%;
+}
+
+picture, source, figure{
+    font-size: 0;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    color: #8ac43f;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom:50px;
+    padding-top: 30px;
+}
+
+header+section,
+#carac> div,
+#panta> div,
+#rese> div,
+#cont> div{
+    padding: 0 3vw;
+}
+
+section,
+main{
+    overflow: hidden;
+}
+
+/*------------- HEADER -------------*/
+header{
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #8ac43f;
+    position: relative;
+    z-index: 200;
+    background-color: white;
+}
+
+#logo{
+    font-size: 0;
+    height: 80px;
+    background: url(../img/logo.svg) no-repeat center center;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px;
+}
+
+nav>p{
+    width: 35px;
+    height: 35.4px;
+    margin-top: calc(100px - 67.5px);
+    margin-left: 20px;
+    text-indent: -9000px;
+	overflow: hidden;
+    background: url(../img/menu.svg) no-repeat;
+    background-size: cover;
+}
+
+#iconos{
+    width: 35px;
+    height: 35.4px;
+    margin-top: calc(100px - 67.5px);
+    margin-left: 20px;
+}
+
+#botones {
+    width:100vw;
+    height: 0;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background: white;
+    -webkit-transition: height .5s ease;
+    transition: height .5s ease;    
+    overflow: hidden;
+    z-index: 10;
+}
+
+#botones li a {
+    text-align: center;
+    height:60px;
+    line-height:60px;
+    font-size: 1.25em;
+    font-family: 'm';
+    text-transform: uppercase;
+    color: #8ac43f;
+}
+
+#botones ul> :first-child a {
+    margin-top: 15px;
+}
+
+
+/*------------- BANNER -------------*/
+header+section{
+    text-align: center;
+    background: url(../img/cel/banner.jpg) no-repeat fixed;
+    width: 100%;
+    height: calc(100vw * 1.175);
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+header+section h2{
+    font-family: 'mb';
+    font-size: 1.125em;
+    border-bottom: none;
+    color: #333333;
+    margin-top: 0;
+    margin-bottom: 7vw;
+    padding: 0;
+}
+
+header+section> :first-child{
+    margin: auto;
+}
+
+header+section p span{
+    display: block;
+    margin-top: 5vw;
+}
+
+header+section a{
+    font-family: 'mb';
+    color: white;
+    font-size: 1.125em;
+    background-color: #8ac43f;
+    line-height: 40px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 7vw;
+    width: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+header+section a span{
+    background: url(../img/plataforma.svg) no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 25px;
+    display: block;
+}
+
+header+section ul> :last-child a{
+    margin-top: 3vw;
+}
+
+header+section ul> :last-child a span{
+    background-position: 0 -63px;
+    
+}
+
+
+/*------------- FLECHA -------------*/
+body>div{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding-top: 10px;
+    background: url(../img/fondo-flecha.png) repeat-x;
+    height: 40px;
+    width: 100%;
+}
+
+body>div p span{
+    background: url(../img/flecha.svg) no-repeat;
+    display: block;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    margin: auto;
+}
+
+body>div p a{
+    width: 100%;
+}
+
+
+/*------------- CARACTERISTICAS -------------*/
+#carac ul{
+    display: -ms-grid;
+    display: grid;
+    grid-row-gap: 40px;
+    text-align: center;
+}
+
+#carac ul li div{
+    background: url(../img/disenio.svg) no-repeat center top;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+#carac ul> :nth-child(2) div{
+    background: url(../img/seguro.svg) no-repeat center top;
+}
+
+#carac ul> :nth-child(3) div{
+    background: url(../img/amigable.svg) no-repeat center top;
+}
+
+#carac ul> :nth-child(4) div{
+    background: url(../img/rapido.svg) no-repeat center top;
+}
+
+#carac ul> :nth-child(5) div{
+    background: url(../img/gratis.svg) no-repeat center top;
+}
+
+#carac ul> :last-child div{
+    background: url(../img/descuentos.svg) no-repeat center top;
+}
+
+#carac ul li h3{
+    font-family: 'ms';
+    font-size: 1.125em;
+    margin-bottom: 10px;
+    color: #8ac43f;
+}
+
+ #carac ul li{
+        position: relative;
+    }
+
+/*------------- PANTALLAS -------------*/
+#panta img{
+    max-width: 250px;
+    margin: auto;
+}
+
+#panta ul{
+    max-width: 800px;
+    margin: auto;
+    z-index: auto;
+}
+
+/*------------- RESEÑAS -------------*/
+#rese ul{
+    display: -ms-grid;
+    display: grid;
+}
+
+#rese ul li>div{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 58px 1fr;
+        grid-template-columns: 58px 1fr;
+    grid-column-gap: 10px;
+}
+
+#rese ul li{
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid #8ac43f;
+}
+
+#rese ul> :first-child{
+    margin: 0;
+}
+
+#rese ul> :last-child{
+    padding: 0;
+    border: none;
+}
+
+#rese ul li img{
+    max-width: 58px;
+}
+
+#rese ul li>div div{
+    background: url(../img/calif.svg) no-repeat;
+    height: 12px;
+    width: 71px;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    margin-top: 25px
+}
+
+#rese h3{
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    font-family: 'ms';
+}
+
+#rese ul li p{
+    margin-top: 15px
+}
+
+
+/*------------- CONTACTO -------------*/
+#cont>p{
+    text-align: center;
+}
+
+#cont form p{
+    font-family: 'ms';
+    color: #8ac43f;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+input,
+textarea{
+    width: 100%;
+    border: 1px solid #8ac43f;
+    border-radius: 5px;
+    height: 40px;
+    padding: 7px;
+}
+
+#cont textarea{
+    height: 100px;
+    resize: none;
+}
+
+input[type='submit']{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+    background-color: #8ac43f;
+    color: white;
+    font-family: 'ms';
+    font-size: 1.125em;
+    padding: 0;
+    width: 70vw;
+}
+
+
+/*--------------MENSAJE PHP--------------*/
+#php{
+    width: 90vw;
+    height: 30vh;
+    top: calc(50% - 15vh);
+    left: calc(50% - 45vw);
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    z-index: 10;
+}
+
+#php> :first-child {
+    color: #8ac43f;
+    font-size: 2.5em;
+    margin: 0;
+    font-family: 'mb';
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+}
+
+#php> :last-child{
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'm';
+    margin: 0;
+}
+
+#php> :last-child a{
+    width: 30px;
+    height: 30px;
+    font-size: 1.125em;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background: #8ac43f;
+    font-family: 'ms';
+    border-radius: 5%;
+    position: absolute;
+    top:-15px;
+    right: -15px;
+}
+
+#php{
+    display: none;
+}
+
+#php:target{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 6vh;
+}
+
+
+/*------------- FOOTER -------------*/
+footer{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-top: 1px solid #8ac43f;
+    margin-top: 20px;
+}
+
+footer ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 150px;
+    margin: auto;
+}
+
+footer a{
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    background: url(../img/redes.svg) no-repeat;
+    background-size: cover;
+}
+
+footer ul> :nth-child(2) a{
+    background-position: 0 -60px;
+}
+
+footer ul> :last-child a{
+    background-position: 0 -120px;
+}
+
+footer p{ 
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 20px
+}
+
+
+@media screen and (min-width: 480px){
+/*------------- BANNER -------------*/
+    header+section{
+        background: url(../img/tablet/banner.jpg) no-repeat fixed;
+        height: calc(100vw * 0.7142857142857143);
+        background-size: cover;
+    } 
+    
+    header+section a{
+        margin: 0;
+    }
+    
+    header+section ul> :last-child a{
+        margin-top: 0;
+    }
+    
+    header+section ul{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin: auto;
+        margin-top: 7vw;
+        max-width: 350px;
+    }
+    
+    
+ /*------------- PANTALLAS -------------*/   
+    #panta img{
+        max-width: 320px;
+    }
+}
+
+
+@media screen and (min-width: 540px){
+/*------------- CONTACTO -------------*/
+    #cont>p{
+        margin-bottom: 30px;
+    }
+    
+    #cont form{
+        display: -ms-grid;
+        display: grid;
+        grid-row-gap: 20px;
+        max-width: 560px;
+        margin: auto;
+    }
+    
+    #cont form div{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 120px 1fr;
+            grid-template-columns: 120px 1fr;
+    }
+    #cont form p{
+        margin: 0;
+        line-height: 30px;
+    }
+    
+    input[type='submit']{
+        margin-top: 0;
+        -ms-grid-column: 2;
+            grid-column-start: 2;
+        width: 250px;
+    }
+}
+
+    
+@media screen and (min-width: 600px){
+    
+/*------------- CARACTERISTICAS -------------*/
+    #carac ul{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        grid-column-gap: 40px;
+    }
+}
+
+
+@media screen and (min-width: 700px){
+/*------------- BANNER -------------*/
+    header+section{
+        background: url(../img/tablet/banner1.jpg) no-repeat fixed;
+        height: calc(100vw * 0.7058823529411765);
+        background-size: cover;
+    } 
+    
+    
+/*------------- RESEÑAS -------------*/   
+    #rese ul{
+        -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 220px;
+        grid-gap: 30px
+    }
+    
+    #rese ul li,
+    #rese ul > :last-child{
+        border: 1px solid #8ac43f;
+        border-radius: 5px;
+        margin: 0;
+        padding: 15px;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-rows: 88px 1fr;
+            grid-template-rows: 88px 1fr;
+    }
+    
+    #rese ul li p{
+        margin-top: 0;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+/*------------- CONTACTO -------------*/
+    #cont form div{
+        display: block;
+    }
+    
+    #cont aside {
+        margin: 0;
+        -ms-grid-column: 1;
+            grid-column-start: 1;
+    }
+    
+    #cont >div >p{
+        -ms-grid-column: 1;
+            grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    #cont >div{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns:1fr 1fr;
+            grid-template-columns:1fr 1fr;
+        grid-column-gap: 20px;
+    }
+    
+    #cont >div>div{
+        background: url(../img/tablet/contac.jpg) no-repeat;
+        background-size: cover;
+        
+    }
+}
+
+
+@media screen and (min-width: 850px){
+/*------------- BANNER -------------*/
+    header+section{
+        background: url(../img/tablet/banner2.jpg) no-repeat fixed;
+        height: calc(100vw * 0.5625);
+        background-size: cover;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    } 
+    
+    header+section> :last-child{
+        background: url(../img/tablet/cel.png) no-repeat;
+        width: 237px;
+        height: 444px;
+        position: relative;
+    }
+    
+    header+section> :first-child{
+        margin: 0;
+    }
+    
+    header+section h2{
+        font-size: 1.5em;
+        margin-bottom: 50px;
+        width: 500px;
+        text-align: left;
+        padding: 0;
+    }
+
+    header+section p{
+        font-size: 1.20em;
+        width: 500px;
+        text-align: left;
+    }
+    
+    header+section p span{
+        margin-top: 20px;
+        font-size: 1em;
+    }
+    
+    header+section ul{
+        margin-top: 40px;
+        margin-left: 0;
+        max-width: 400px;
+    }
+
+    header+section a{
+        width: 180px;
+    }
+    
+    header+section div div{
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (min-width: 922px){
+/*------------- CONTACTO -------------*/
+    #cont >div >p{
+        -ms-grid-column: 1;
+            grid-column-start: 1;
+        grid-column-end: 2;
+        margin-bottom: 20px;
+        text-align: left
+    }
+    
+    #cont aside {
+        -ms-grid-row: 2;
+            grid-row-start: 2;
+    }
+    
+    #cont form{
+        max-width: 500px;
+        margin: 0;
+    }
+    
+    #cont >div>div{
+        background: url(../img/tablet/contac2.jpg) no-repeat;
+        background-size: cover;
+        max-width: 540px;
+        -ms-grid-row:1;
+            grid-row-start:1;
+        grid-row-end: 3;
+    }
+    
+}
+
+
+@media screen and (min-width: 1024px){
+/*------------- HEADER -------------*/
+    header{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 10px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        border: none;
+    }
+    
+    h1{
+        background: url(../img/logo.svg) no-repeat;
+        height: 80px;
+        width: 110px;
+        position: static;
+    }
+    
+    nav>p{
+        display: none;
+    }
+
+    nav{
+        position: static;
+        height: 80px;
+        width: auto;
+    }
+
+    #botones{
+        height: 40px;
+        background: none;
+        width: auto;
+        right: 0;
+        bottom: 0;
+        top: auto;
+        left: auto;
+    }
+    
+    #botones li a{
+        width: 170px;
+        font-size: 0.9em;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    #botones li a:hover{
+        border-bottom: 1px solid #8ac43f;
+    }
+    
+    #botones ul > :first-child a{
+        margin: 0;
+    }
+    
+    #botones ul{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    
+    
+/*------------- BANNER -------------*/
+    header+section{
+        background: url(../img/pc/banner.jpg) no-repeat fixed;
+        height: calc(100vw * 0.4143484626647145);
+        background-size: cover;
+        padding: 0 7vw
+    } 
+    
+    header+section> :last-child{
+        background: url(../img/pc/cel.png) no-repeat;
+        width: 214px;
+        height: 400px;
+        top:calc(50% - 200px);
+    }
+ 
+    header+section a:hover{
+        border: 1px solid #8ac43f;
+        background: none;
+        color: #8ac43f;
+        height: 40px;
+    }
+    
+    header+section ul> :first-child a:hover span{
+        background-position: 0 -32px;
+    }
+    
+    header+section ul> :last-child a:hover span{
+        background-position: 0 -95px;
+    }
+   
+    
+/*------------- CONTACTO -------------*/
+    input{
+        height: 30px;
+    }
+    
+    input[type='submit']:hover{
+        cursor: pointer;
+        border: 1px solid #8ac43f;
+        background: none;
+        color: #8ac43f;
+    }
+    
+    
+/*------------- FOOTER -------------*/   
+    footer ul> :first-child a:hover{
+        background-position: 0 -30px;
+    }
+
+    footer ul> :nth-child(2) a:hover{
+        background-position: 0 -90px;
+    }
+
+    footer ul> :last-child a:hover{
+        background-position: 0 -150px;
+    }
+    
+}
+
+
+@media screen and (min-width: 1160px){
+/*------------- GENERAL -------------*/
+    #carac,
+    #panta,
+    #rese,
+    #cont{
+        min-height: 100vh
+    }
+    
+    h2{
+        padding-top: 40px;
+    }
+    
+    
+/*------------- BANNER -------------*/
+   header+section> :last-child{
+        background: url(../img/tablet/cel.png) no-repeat;
+        width: 237px;
+        height: 444px;
+        top:calc(50% - 222px);
+    }
+    
+    header+section h2{
+        width: auto;
+    }
+    
+    header+section p{
+        width: 700px;
+    }
+    
+    
+/*------------- CARACTERÍSTICAS -------------*/
+    #carac ul{
+        -ms-grid-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 100px
+    }
+        
+    
+/*------------- PANTALLAS -------------*/
+    #panta ul{
+        max-width: 1280px;
+    }    
+    
+    
+/*------------- RESEÑAS -------------*/    
+    #rese ul{
+        -ms-grid-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px
+    }
+    
+    
+/*------------- CONTACTO -------------*/
+    #cont >div>div{
+        height: 432px;
+        width: 540px;
+        justify-self: right;
+    }
+}

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <link rel="stylesheet" href="estilos/estilos.css">
+    
+    <title>Yoyoga</title>
+</head>
+<body>
+    <header>
+        <h1 id='logo'>Yoyoga</h1>
+        
+        <nav>
+           <p>Abrir/Cerrar</p>
+          
+           <div id='botones'>
+               
+               <p>Volver</p>
+               <div>
+               <p>Yoyoga</p>
+               
+                <ul>
+                    <li><a href="#todo">Todo</a></li>
+                    <li><a href="#monos">Monos</a></li>
+                    <li><a href="#pant">Pantalones</a></li>
+                    <li><a href="#reme">Remeras</a></li>
+                </ul>
+                </div>
+                <p><a href="#yo">Desarrollador</a></p>
+            </div>
+            
+        </nav>
+        
+            <p>Carrito</p>
+    </header>
+    
+    <div id='carrito'>
+    <h2>Bolsa  <span></span></h2>
+      
+        
+    <div> 
+    <p>Total: <span>$0</span></p>       
+    <p><a href="#pago">Finalizar compra</a></p>
+    </div> 
+    <p>Volver</p>
+    </div>
+    
+    <div>
+    <div id='gracia'>
+        <h2>Gracias por tu compra</h2>
+        <p>Susbcribite a nuestro newsletter para ser el primero en recibir ofertas</p>
+        
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div>
+                
+                <input type="email" name="email" placeholder="E-mail" required />
+                
+                <button type="submit">Enviar <span></span></button>
+            </div>
+        </form>
+        
+        <p><a href="#">Volver</a></p>
+    </div>
+    
+    <main>
+        <h2>Productos destacados</h2>
+        
+        <ul>
+            <li class='todo reme'>
+              <a href="#motor">
+               <figure>
+                   <picture>
+                      <source srcset="img/tablet/motor.jpg" media="(min-width: 700px)" />
+                       <img src="img/cel/motor.jpg" alt="Modelo posando con la remera Motohome en color gris">
+                   </picture>
+               </figure>
+               <div>
+                <h3>Remera <span>Motorhome</span></h3>
+                <p>$1100</p>
+                </div>
+                </a>
+            </li>
+            
+            <li class='todo mono'>
+               <a href="#jump">
+                <figure>
+                   <picture>
+                      <source srcset="img/tablet/jump.jpg" media="(min-width: 700px)" />
+                       <img src="img/cel/jump.jpg" alt="Modelo posando con un Jump-Pant negro">
+                   </picture>
+               </figure>
+               <div>
+                <h3>Mono <span>Jump-Pant</span></h3>
+                <p>$1325</p>
+                </div>
+                </a>
+            </li>
+            
+            <li class='todo pant'>
+               <a href="#rag">
+                <figure>
+                   <picture>
+                      <source srcset="img/tablet/rag.jpg" media="(min-width: 700px)" />
+                       <img src="img/cel/rag.jpg" alt="Modelo posando con un pantalón Rag blanco">
+                   </picture>
+               </figure>
+               <div>
+                <h3>Pantalón <span>Rag</span></h3>
+                <p>$1400</p>
+                </div>
+                </a>
+            </li>
+            
+            <li class='todo reme'>
+               <a href="#musi">
+                <figure>
+                   <picture>
+                      <source srcset="img/tablet/musi.jpg" media="(min-width: 700px)" />
+                       <img src="img/cel/musi.jpg" alt="Modelo posando con un Musiculosa negra">
+                   </picture>
+               </figure>
+               <div>
+                <h3>Remera <span>Musiculosa</span></h3>
+                <p>$800</p>
+                </div>
+                </a>
+            </li>
+            
+            <li class='todo mono'>
+               <a href="#vpant">
+                <figure>
+                   <picture>
+                      <source srcset="img/tablet/vpant.jpg" media="(min-width: 700px)" />
+                       <img src="img/cel/vpant.jpg" alt="Modelo posando con un V-Pant gris">
+                   </picture>
+               </figure>
+               <div>
+                <h3>Mono <span>V-Pant</span></h3>
+                <p>$1200</p>
+                </div>
+                </a>
+            </li>
+            <li class='todo pant'>
+               <a href="#trapo">
+                <figure>
+                   <picture>
+                      <source srcset="img/tablet/trapo.jpg" media="(min-width: 700px)" />
+                       <img src="img/cel/trapo.jpg" alt="Modelo posando con un pantalón Trapo gris">
+                   </picture>
+               </figure>
+               <div>
+                <h3>Pantalón <span>Trapo</span></h3>
+                <p>$1500</p>
+                </div>
+                </a>
+            </li>
+        </ul>
+    </main>
+    
+    <div id='motor'>
+       <figure>
+           <picture>
+              <source srcset="img/tablet/motor-modal.jpg" media="(min-width: 590px)" />
+               <img src="img/cel/motor-modal.jpg" alt="Modelo posando con la remera Motorhome en blanco">
+           </picture>
+       </figure>
+        <h3>Motorhome</h3>
+        <p>Puedes hacer el escote que quieras, la longitud de la manga y el cuerpo también. <br> Algodón orgánico 100%. <span>$1100</span></p>
+        
+        <div>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div>
+            <select name="talle">
+                <option value="" disabled selected>Talle</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+            </select> 
+            
+            <select name="color">
+                <option value="" disabled selected>Color</option>
+                <option value="n">Negro</option>
+                <option value="g">Gris</option>
+                <option value="v">Violeta</option>
+            </select>
+            </div>
+        </form>
+        
+        <button>Agregar <span></span></button>
+        </div>
+        <p><a href="#">Volver</a></p>
+    </div>
+    
+    <div id="jump">
+       <figure>
+           <picture>
+              <source srcset="img/tablet/jump-modal.jpg" media="(min-width: 590px)" />
+               <img src="img/cel/jump-modal.jpg" alt="Modelo posando con un Jump-Pant negro">
+           </picture>
+       </figure>
+        <h3>Jump-Pant</h3>
+        <p>La parte superior de la prenda es de doble paño y se ajusta de forma segura ¡JUMP-PANT es amplio y versátil, puedes encontrar varias oportunidades de uso!<br>
+         Jersey viscosa 92% + 8% elastano. <span>$1325</span></p>
+        
+        <div>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div>
+            <select name="talle">
+                <option value="" disabled selected>Talle</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+            </select> 
+            
+            <select name="color">
+                <option value="" disabled selected>Color</option>
+                <option value="n">Negro</option>
+                <option value="g">Gris</option>
+                <option value="b">Blanco</option>
+            </select>
+            </div>
+        </form>
+        <button>Agregar <span></span></button>
+        </div>
+        <p><a href="#">Volver</a></p>
+    </div>
+    
+    <div id="musi">
+       <figure>
+           <picture>
+              <source srcset="img/tablet/musi-modal.jpg" media="(min-width: 590px)" />
+               <img src="img/cel/musi-modal.jpg" alt="Modelo posando con una Musiculosa negra">
+           </picture>
+       </figure>
+        <h3>Musiculosa</h3>
+        <p>Puedes hacer el escote que quieras, la longitud de la manga y el cuerpo también.<br> 
+        Algodón orgánico 100%. <span>$800</span></p>
+        
+        <div>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div>
+            <select name="talle">
+                <option value="" disabled selected>Talle</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+            </select> 
+            
+            <select name="color">
+                <option value="" disabled selected>Color</option>
+                <option value="n">Negro</option>
+                <option value="g">Gris</option>
+            </select>
+            </div>
+        </form>
+        
+        <button>Agregar <span></span></button>
+        </div>
+        <p><a href="#">Volver</a></p>
+    </div>
+    
+    <div id='rag'>
+       <figure>
+           <picture>
+              <source srcset="img/tablet/rag-modal.jpg" media="(min-width: 590px)" />
+               <img src="img/cel/rag-modal.jpg" alt="Modelo posando con un pantalón Rag blanco">
+           </picture>
+       </figure>
+        <h3>Rag</h3>
+        <p>Este pantalón puede ser cortado. El cordón para sujetar la cintura está hecho de materiales textiles, por ese motivo es irregular.<br> 
+        Algodón jersey 92% + 8% elastano. <span>$1400</span></p>
+        
+        <div>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div>
+            <select name="talle">
+                <option value="" disabled selected>Talle</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+            </select> 
+            
+            <select name="color">
+                <option value="" disabled selected>Color</option>
+                <option value="n">Negro</option>
+                <option value="b">Blanco</option>
+            </select>
+            </div>
+        </form>
+            
+        <button>Agregar <span></span></button>
+        </div>
+        <p><a href="#">Volver</a></p>
+    </div>
+    
+    <div id='trapo'>
+       <figure>
+           <picture>
+              <source srcset="img/tablet/tapo-modal.jpg" media="(min-width: 590px)" />
+               <img src="img/cel/tapo-modal.jpg" alt="Modelo posando con pantalón trapo en color gris">
+           </picture>
+       </figure>
+        <h3>Trapo</h3>
+        <p>Este pantalón puede ser cortado. El cordón para sujetar la cintura está hecho de materiales textiles, por ese motivo es irregular.<br> 
+        Algodón jersey 92% + 8% elastano. <span>$1500</span></p>
+        
+        <div>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div>
+            <select name="talle">
+                <option value="" disabled selected>Talle</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+            </select> 
+            
+            <select name="color">
+                <option value="" disabled selected>Color</option>
+                <option value="n">Negro</option>
+                <option value="g">Gris</option>
+                <option value="m">Mostaza</option>
+            </select>
+            </div>
+        </form>
+        
+        <button>Agregar <span></span></button>
+        </div>
+        <p><a href="#">Volver</a></p>
+    </div>
+    
+    <div id="vpant">
+       <figure>
+           <picture>
+              <source srcset="img/tablet/vpant-modal.jpg" media="(min-width: 590px)" />
+               <img src="img/cel/vpan-modal.jpg" alt="Modelo posando con un V-Pant gris">
+           </picture>
+       </figure>
+        <h3>V-Pant</h3>
+        <p>Tiene escote tanto en el delantero como en la espalda y si deseas ajustarlo en las caderas, tienes un lazo del mismo tejido y de corte irregular.<br>
+        Jersey viscosa 92% + 8% elastano. <span>$1200</span></p>
+        
+        <div>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div>
+            <select name="talle">
+                <option value="" disabled selected>Talle</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+            </select> 
+            
+            <select name="color">
+                <option value="" disabled selected>Color</option>
+                <option value="n">Negro</option>
+                <option value="g">Gris</option>
+            </select>
+            </div>
+        </form>
+        
+        <button>Agregar <span></span></button>
+        </div>
+        <p><a href="#">Volver</a></p>
+    </div>
+    
+    <div id="pago">
+       <h2>Método de pago</h2>
+       
+       <span></span>
+        <form  action='#gracia' method="post" enctype="multipart/form-data" id='check'>
+                <div>
+                <p>Nro. de tarjeta*:</p>
+                <input type="number" name="nro" required  placeholder='---- ---- ---- ----'/>
+                </div>
+                <div>
+                <p>CVV(3 dígitos)*:</p>
+                <input type="number" name='cvv' required placeholder='---'/>
+                </div>
+                <div>
+                <p>Fecha de vto.*:</p>
+                <input type="month" name='vto' required />
+                </div>
+                <div>
+                <p>Nombre*:</p>
+                <input type="text" name="titular" required/>
+                </div>
+                <div>
+                <p>Cuotas*:</p>
+                <select name="cuota">
+                    <option value="1">1 cuota</option>
+                    <option value="3">3 cuotas</option>
+                    <option value="6">6 cuotas</option>
+                </select>
+                </div>
+        </form>
+        <p><a href="#envio">Siguiente</a></p>
+        
+        <p><a href="#">Volver</a></p>
+    </div>
+    
+    <div id="envio">
+       <h2>Envío</h2>
+       
+       <span></span>
+       <div>
+            <div>
+            <p>Nombre*:</p>
+            <input type="text" name="nom" required form='check'/>
+            </div>
+            <div>
+            <p>Apellido*:</p>
+            <input type="text" name='ape' required form='check'/>
+            </div>
+            <div>
+            <p>Dirección*:</p>
+            <input type="text" name='direc' required form='check'/>
+            </div>
+            <div>
+            <p>Ciudad*:</p>
+            <input type="text" name="titular" required form='check'/>
+            </div>
+            <div>
+            <p>Código potal*:</p>
+            <input type="number" name="cp" required form='check'/>
+            </div>
+        </div>
+        <button type="submit" form='check'>Finalizar</button>
+        
+        <p><a href="#">Volver</a></p>
+    </div>
+    
+    <div id="yo">
+        <figure>
+            <picture>
+                <source srcset="img/tablet/yo.jpg" media="(min-width: 590px)" />
+                <img src="img/cel/yo.jpg" alt="Desarrolladora de la app">
+            </picture>
+        </figure>
+       
+        <ul>
+            <li>Diseño y programación web y mobile</li>
+            <li>Interacción con dispositivos móviles</li>
+            <li>Comisión: A</li>
+            <li>Turno mañana</li>
+            <li>2018</li>
+            <li>Segundo cuatrimestre</li>
+            <li>Omar Toyos</li>
+            <li>Final</li>
+            <li>Iglesias, Pamela</li>
+        </ul>
+        <p><a>Volver</a></p>
+    </div>
+    </div>
+    
+    <div id='fondo'></div>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

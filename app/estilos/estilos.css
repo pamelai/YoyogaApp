@@ -1,0 +1,710 @@
+/*------------------- GENERAL -------------------*/
+@font-face {
+    font-family: 'm';
+    src: url('../tipos/montserrat-regular-webfont.eot');
+    src: url('../tipos/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../tipos/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../tipos/montserrat-regular-webfont.woff') format('woff'),
+         url('../tipos/montserrat-regular-webfont.ttf') format('truetype'),
+         url('../tipos/montserrat-regular-webfont.svg#m') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ms';
+    src: url('../tipos/montserrat-semibold-webfont.eot');
+    src: url('../tipos/montserrat-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../tipos/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('../tipos/montserrat-semibold-webfont.woff') format('woff'),
+         url('../tipos/montserrat-semibold-webfont.ttf') format('truetype'),
+         url('../tipos/montserrat-semibold-webfont.svg#ms') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'mb';
+    src: url('../tipos/montserrat-bold-webfont.eot');
+    src: url('../tipos/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../tipos/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../tipos/montserrat-bold-webfont.woff') format('woff'),
+         url('../tipos/montserrat-bold-webfont.ttf') format('truetype'),
+         url('../tipos/montserrat-bold-webfont.svg#mb') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.25em;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'm', 'arial';
+    color: #333333;
+    font-weight: normal;
+}
+
+*:focus{
+    outline: none;
+}
+
+a{
+    display: block;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+img{
+    width: 100%;
+}
+
+picture, source, figure{
+    font-size: 0;
+}
+
+main{
+    padding: 20px;
+    padding-top: 0;
+}
+
+body> div> div{
+    text-align: center;
+    display: none;
+    padding: 20px
+}
+
+
+/*------------------- HEDAER -------------------*/
+header{
+    height: 90px;
+    border-bottom: 1px solid #b1b1b1;
+}
+
+#logo, #botones> :nth-child(2) p{
+    font-size: 0;
+    height: 70px;
+    background: url(../img/logo.svg) no-repeat center center;
+    position: relative;
+    top:10px;
+}
+
+#botones> :nth-child(2) p{
+    background: url(../img/logo.svg) no-repeat center center;
+    width: 110px;
+    left: 20px;
+    top:0;
+    margin: 10px 0;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px;
+}
+
+nav>p{
+    width: 30px;
+    height: 30px;
+    margin-top: calc(100px - 67.5px);
+    margin-left: 10px;
+    text-indent: -9000px;
+	overflow: hidden;
+    background: url(../img/menu.svg) no-repeat;
+}
+
+#botones {
+    width:0;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    transition: width .3s ease;    
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    z-index: 6;
+}
+
+#botones ul{
+    border-top: 1px solid #b1b1b1;
+    padding-top:15px;
+}
+
+#botones li a {
+    text-align: left;
+    height:60px;
+    line-height:60px;
+    font-size: 1.125em;
+    font-family: 'ms';
+    margin-left: 20px
+}
+
+#botones p a{
+    text-align: center;
+    color: #8ac43f;
+    padding: 5px;
+    width: 180px;
+    margin: auto;
+    border-bottom: 1px solid #8ac43f;
+}
+
+header>p{
+    position: absolute;
+    background: url(../img/bag.svg) no-repeat;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    top: calc(100px - 67.5px);
+    right: 10px;
+}
+
+#fondo{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    transition: .3s ease;  
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#botones> :first-child{
+    position: absolute;
+    top:35px;
+    right: 20px;
+    font-size: 0;
+    background: url(../img/flechader.svg) no-repeat;
+    height: 20px;
+    width: 25px;
+}
+
+/*------------------- PRODUCTOS -------------------*/
+h2{
+    font-size: 1.25em;
+    text-transform:uppercase; 
+    text-align: center;
+    margin: 30px 0;
+    color: #666666;
+}
+
+li h3{
+    text-align: center;
+}
+
+li h3 span{
+    display: block;
+    font-family: 'ms';
+    font-size: 1.125em;
+}
+
+main> ul li p{
+    font-family: 'ms';
+    font-size: 1.25em;
+    text-align: center;
+}
+
+main> ul li{
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+    padding: 15px
+}
+
+main> ul> :last-child{
+    margin: 0;
+}
+
+main> ul li figure{
+    text-align: center;
+    margin-bottom: 20px
+}
+
+main> ul li img{
+    max-width: 300px;
+}
+
+li>div div{
+    display: flex;
+    justify-content: space-between;
+}
+
+main> ul li p{
+    width: 100%;
+}
+
+main> ul li p a{
+    color:#8ac43f;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main> ul li p a span{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+li>div div> :first-child span{
+    background: url(../img/agregar.svg) no-repeat center;
+}
+
+li>div div> :last-child span{
+    background: url(../img/ver.svg) no-repeat left center;
+}
+
+li>div div{
+    text-align: center;
+}
+
+li a>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+
+
+/*------------------- PRODUCTOS INDIVIDUAL-------------------*/
+body> div> div img{
+    max-width: 480px;
+}
+
+body> div> div h3, body> div p span{
+    font-family: 'mb';
+    text-transform: uppercase;
+    font-size: 1.25em;
+}
+
+body> div> div h3, body> div>div img{
+    margin-bottom: 20px;
+}
+
+body> div> div p span{
+    display: block;
+    margin: 50px 0;
+}
+
+body> div> div form div{
+    display: grid;
+    grid-row-gap: 5px;
+}
+
+body> div> div form div select{
+    height: 40px;
+}
+
+body> div> div>div{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-row-gap: 5px;
+}
+
+body> div> div>div button{
+    height:40px;
+    width: 100%;
+    background-color: #8ac43f;
+    color: white;
+    font-family: 'ms';
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body> div> div>div button span{
+    background-image: url(../img/agregar-modal.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 25px;
+    width: 25px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+
+body> div> div> :last-child a{
+    width: 150px;
+    height: 30px;
+    margin: 10px auto 0 auto;
+    line-height: 30px;
+    text-align: center;
+    color: #8ac43f;
+    border-bottom: 1px solid #8ac43f;
+}
+
+#motor:target, 
+#jump:target, 
+#musi:target, 
+#rag:target, 
+#trapo:target,
+#envio:target,
+#pago:target,
+#gracia:target,
+#vpant:target{
+    display: block;
+}
+
+
+/*------------------- PAGO -------------------*/
+#pago h2, 
+#envio h2{
+    text-transform: none;
+    font-family: 'mb';
+    color: #333333;
+    font-size: 1.125em;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+#pago h2+span,
+#envio h2+span{
+    display: block;
+    height: 20px;
+    font-size: 0.9em;
+    color: red;
+}
+
+
+#pago form div, 
+#envio div div{
+    margin: 20px 0;
+}
+
+#pago form div p, 
+#envio div p{
+    margin: 0;
+    line-height: 30px;
+}
+
+#pago form div input, 
+#pago form div select{
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 5px
+}
+
+#pago form div input[type='month']{
+    width: auto;
+}
+
+#pago p a[href="#envio"], 
+#envio button,
+#carrito> div> :last-child a{
+    width: 100%;
+    height: 30px;
+    background-color: #8ac43f;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'mb';
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    margin-top: 50px;
+}
+
+
+/*------------------- ENVIO -------------------*/
+#envio{
+    padding: 15px;
+}
+
+#envio h2{
+    margin-top: 0;
+}
+
+#envio div div{
+    display: grid;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+#envio div div> :last-child{
+    margin: 0;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+}
+
+
+/*------------------- YO -------------------*/
+#yo img{
+    max-width: 480px;
+    margin-bottom: 50px;
+}
+
+#yo ul{
+    text-align: left;
+    list-style-position: inside;
+}
+
+#yo ul li{
+    list-style-image: url(../img/bola.svg);
+}
+
+
+/*------------------- GRACIAS -------------------*/
+#gracia:target + main{
+    display: none;
+}
+
+#gracia h2{
+    font-family: 'mb';
+    color:#8ac43f;
+    text-transform: none;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+#gracia> :nth-child(2), #gracia form{
+    margin-bottom: 50px;
+}
+
+#gracia form div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+}
+
+#gracia input{
+    height: 30px;
+    text-align: center;
+}
+
+#gracia button{
+    height: 30px;
+    background-color: #8ac43f;
+    font-size: 0;
+}
+
+#gracia button span{
+    display: block;
+    background: url(../img/enviar.svg) center center no-repeat;
+    height: 20px;
+    margin: auto;
+}
+
+#gracia form{
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*------------------- CARRITO -------------------*/
+#carrito{
+    display: block;
+    padding: 0;
+    width: 0;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+    transition: width .2s ease;    
+    overflow: hidden;
+    text-align: center;
+}
+
+#carrito h2{
+    margin: auto;
+    margin-top: 0;
+    text-transform: none;
+    font-family: 'ms';
+    width: 200px;
+    margin-bottom: 50px
+}
+
+#carrito> div{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#carrito> div> :first-child{
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+    font-family: 'ms';
+    height: 40px;
+}
+
+#carrito> div> :first-child span{
+    margin: 0;
+    font-family: inherit;
+    line-height: 40px;
+    font-size: 1em;
+    height: 40px;
+    
+}
+
+#carrito> div> :last-child a{
+    margin-top:10px;
+    border: none;
+}
+
+#carrito>p{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 0;
+    background: url(../img/flechaizq.svg) no-repeat;
+    height: 20px;
+    width: 25px;
+}
+
+
+@media screen and (min-width: 400px){
+/*------------------- PRODUCTOS -------------------*/
+    main> ul li a{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+    
+    main> ul li a figure{
+        margin-bottom:0;
+    }
+
+    main> ul li a img{
+        max-width: 300px;
+    }
+    
+    li a>div{
+        height: auto;
+        justify-content: space-around
+    }
+    
+    
+ /*------------------- GRACIAS -------------------*/   
+    #gracia form div{
+        grid-template-columns: 3fr 1fr;
+        grid-row-gap: 0;
+        grid-column-gap: 5px;
+    }
+    
+    #gracia button{
+        grid-column-start: 2;
+    }
+    
+    #gracia input{
+        text-align: left;
+        padding: 5px;
+    }
+}
+
+
+@media screen and (min-width: 460px){
+/*------------------- PRODUCTO INDIVIUAL -------------------*/     
+     body> div> div>div button{
+        grid-column-start: 2;
+    }
+    
+    body > div > div > div {
+        grid-template-columns: 1.5fr 1fr;
+        grid-column-gap: 5px;
+    }
+    
+    body > div > div form div {
+        grid-column-gap: 5px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    
+/*------------------- PAGO -------------------*/ 
+    #pago form div, #envio>div div {
+        grid-template-columns: 1fr 2fr;
+        text-align: left;
+    }
+    
+    #envio>div{
+        grid-template-rows: 1fr;
+        grid-template-columns: auto;
+    }
+    
+    
+}
+
+
+@media screen and (min-width: 520px){
+     main> ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px
+    }
+    
+    main> ul li a{
+        grid-template-columns: 1fr;
+        margin: 0
+    }
+    
+    li a>div{
+        height: 100px;
+    }
+    
+    main > ul li {
+        margin:0;
+    }
+}
+
+
+@media screen and (min-width: 590px){
+    
+    
+    body> div> div img {
+        max-width: 550px;
+        margin-bottom: 30px;
+    }
+    
+    
+/*------------------- YO -------------------*/
+    #yo img{
+        max-width: 480px;
+        margin-bottom: 50px;
+    }
+}
+
+
+@media screen and (min-width: 600px){
+/*------------------- ENVIO/PAGO -------------------*/ 
+    #pago form,
+    #envio> div{
+        max-width: 600px;
+        margin: auto;
+    }
+  
+   
+    #pago p a[href="#envio"], 
+    #envio button{
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 30px;
+    }
+    
+    
+    #pago form div p, 
+    #envio div p{
+        margin-bottom: 5px;
+    }
+}
+
+
+@media screen and (min-width: 700px){
+    main> ul li a img{
+        max-width: 340px;
+    }
+}
